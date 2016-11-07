@@ -3,7 +3,7 @@
     "description": "Profiler API for PHP plus extension for Yii2 framework",
     "keywords": ["yii2", "profiler"],
     "type": "yii2-extension",
-	"version": "1.0.0",
+	"version": "1.0.1",
     "license": "GPL",
     "support": {
         "issues": "https://github.com/RAvenGEr/ProfilerYii/issues",
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dpwlabs\\": ""
+            "dpwlabs\\profiler": ""
         }
     }
 }
