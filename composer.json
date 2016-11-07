@@ -1,0 +1,28 @@
+{
+    "name": "dpwlabs/profiler-api",
+    "description": "Profiler API for PHP plus extension for Yii2 framework",
+    "keywords": ["yii2", "profiler"],
+    "type": "yii2-extension",
+	"version": "1.0.0",
+    "license": "GPL",
+    "support": {
+        "issues": "https://github.com/RAvenGEr/ProfilerYii/issues",
+        "source": "https://github.com/RAvenGEr/ProfilerYii"
+    },
+    "authors": [
+        {
+            "name": "David Webb",
+            "email": "ravenger@dpwlabs.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "dpwlabs\\": ""
+        }
+    }
+}
