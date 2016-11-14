@@ -26,16 +26,12 @@ class ProfilerApi {
         $this->config = $configs;
     }
 
-    public function processCCDonation(array $detail, $db = null) {
-        return $this->postApiCall('integration.send', 'OLDON', $detail);
-    }
-
-    public function postPledge(array $detail) {
-        return $this->postApiCall('integration.send', 'PLG', $detail);
+    public function postDonation(array $detail, $db = null) {
+        return $this->postApiCall('integration.send', 'OLDON', $detail, $db);
     }
     
-    public function postMembership(array $detail) {
-        return $this->postApiCall('integration.send', 'MEM', $detail);
+    public function postMembership(array $detail, $db = null) {
+        return $this->postApiCall('integration.send', 'MEM', $detail, $db);
     }
 
     private function postApiCall($method, $datatype, array $data, $db = null) {
